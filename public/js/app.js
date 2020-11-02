@@ -4,7 +4,7 @@ const datad = document.querySelector('#data-template').innerHTML
 let jSONData = []
 axios({
     method: 'get',
-    url: 'http://54.169.233.171:3000/sinhvien'
+    url: 'http://54.179.115.192:3000/sinhvien'
 })
     .then((result) => {
         console.log(result.data)
@@ -22,7 +22,7 @@ axios({
 const addSinhVien = document.getElementById('them').addEventListener('click', (e) => {
     axios({
         method: 'post',
-        url: 'http://54.169.233.171:3000/sinhvien',
+        url: 'http://54.179.115.192:3000/sinhvien',
         data: {
             mssv: document.getElementById('mssv').value,
             hoten: document.getElementById('hoten').value,
@@ -38,7 +38,7 @@ const addSinhVien = document.getElementById('them').addEventListener('click', (e
 const del = (value) => {
     axios({
         method: 'delete',
-        url: 'http://54.169.233.171:3000/sinhvien/' + value,
+        url: 'http://54.179.115.192:3000/sinhvien/' + value,
     })
         .then((result) => {
             console.log(result.data)
@@ -73,7 +73,7 @@ const editSinhVien = document.getElementById('sua').addEventListener('click', (e
     e.preventDefault()
     axios({
         method: 'patch',
-        url: 'http://54.169.233.171:3000/sinhvien/'+ document.getElementById('mssv').value,
+        url: 'http://54.179.115.192:3000/sinhvien/'+ document.getElementById('mssv').value,
         data: {
             hoten: document.getElementById('hoten').value,
             email: document.getElementById('email').value,

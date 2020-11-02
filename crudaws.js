@@ -2,8 +2,8 @@ const AWS = require("aws-sdk")
 
 AWS.config.update({
     region: 'ap-southeast-1',
-    accessKeyId: 'AKIAWAMW4NZRRNHYF6MX',
-    secretAccessKey: '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',
+    accessKeyId: 'AKIAWAMW4NZRZVLI2N6Q',
+    secretAccessKey: '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',
 });
 
 const dynamoDB = new AWS.DynamoDB()

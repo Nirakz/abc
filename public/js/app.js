@@ -84,6 +84,7 @@ const editSinhVien = document.getElementById('sua').addEventListener('click', (e
             console.log(result.data)
             location.reload()
         })
+    
 })
 
 
